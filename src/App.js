@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import Chart from './components/Chart/Chart'
 import Blog from './components/Blog/Blog'
 import Main from './layout/Main';
+import Errorpage from './components/Errorpage/Errorpage';
 
 
 
@@ -13,7 +14,7 @@ function App() {
 		{
 			path: "/",
       element: <Main></Main>,
-      
+      errorElement:<Errorpage></Errorpage>,
       children: [
         {
           path: '/',
