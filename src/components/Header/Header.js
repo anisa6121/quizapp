@@ -12,8 +12,8 @@ const Header = () => {
 						title="proReader"
 						className="inline-flex items-center"
 					>
-						<span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
-							proReader
+						<span className="ml-2 text-xl font-bold tracking-wide text-blue-800">
+							Quiz App
 						</span>
 					</Link>
 					<ul className="flex items-center hidden space-x-8 lg:flex">
@@ -57,7 +57,6 @@ const Header = () => {
 								to="/blog"
 								aria-label="Blog"
 								title="Blog"
-								// className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
 								className={({
 									isActive,
 								}) =>
@@ -109,8 +108,8 @@ const Header = () => {
 												title="proReader"
 												className="inline-flex items-center"
 											>
-												<span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-													proReader
+												<span className="ml-2 text-xl font-bold tracking-wide text-blue-800 uppercase">
+											Quiz App
 												</span>
 											</Link>
 										</div>
@@ -144,43 +143,53 @@ const Header = () => {
 													to="/home"
 													aria-label="Home"
 													title="Home"
-													
-className={({isActive,}) =>isActive
-? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-: "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-}>Home
-</NavLink>
-</li>
-<li>
-<NavLink
-to="/chart"
-aria-label="Chart"
-title="Chart"
-													
-
-className={({isActive,}) =>isActive
-? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-: "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"}>Chart</NavLink>
-	</li>												
-	<li>											
-													
-	<NavLink											
-	to="/blog"										
-		aria-label="Blog"										
-		title="Blog"											
-													
-		className={({	isActive,}) =>		isActive			
-												
-? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-: "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"}	>Blog</NavLink>
-</li>									
-	</ul>													
-	</nav>												
-											
-	</div>									
-	</div>								
-							
-						
+													className={({
+														isActive,
+													}) =>
+														isActive
+															? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+															: "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+													}
+												>
+													Home
+												</NavLink>
+											</li>
+											<li>
+												<NavLink
+													to="/chart"
+													aria-label="Chart"
+													title="Chart"
+													className={({
+														isActive,
+													}) =>
+														isActive
+															? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+															: "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+													}
+												>
+													Chart
+												</NavLink>
+											</li>
+											<li>
+												<NavLink
+													to="/blog"
+													aria-label="Blog"
+													title="Blog"
+													className={({
+														isActive,
+													}) =>
+														isActive
+															? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+															: "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+													}
+												>
+													Blog
+												</NavLink>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
 						)}
 					</div>
 				</div>
