@@ -5,6 +5,7 @@ import Chart from './components/Chart/Chart'
 import Blog from './components/Blog/Blog'
 import Main from './layout/Main';
 import Errorpage from './components/Errorpage/Errorpage';
+import Quizdetails from './components/Quizdetails/Quizdetails';
 
 
 
@@ -31,6 +32,17 @@ function App() {
 					},
 				},
 
+        {
+          path: '/quiz/:quizId',
+          element: <Quizdetails></Quizdetails>,
+          loader: async ({params}) => {
+            // console.log(params);
+     return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`
+		);
+          }
+
+        },
+
 				{
 					path: "/chart",
 					element: <Chart></Chart>,
@@ -51,13 +63,13 @@ function App() {
 		
 
 
-
 			<RouterProvider router={router}></RouterProvider>
 		</div>
   );
 }
 
 export default App;
+
 
 
 
