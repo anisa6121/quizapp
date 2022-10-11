@@ -13,29 +13,34 @@ function App() {
   const router = createBrowserRouter([
 		{
 			path: "/",
-      element: <Main></Main>,
-      errorElement:<Errorpage></Errorpage>,
-      children: [
-        {
-          path: '/',
-          element:<Home></Home>
-        },
-      {
-			path: "/home",
-			element: <Home></Home>,
-        },
-      
-        {
-          path: '/chart',
-          element:<Chart></Chart>
-        },
-        {
-          path: '/blog',
-          element:<Blog></Blog>
-        }
-      ]
+			element: <Main></Main>,
+			errorElement: <Errorpage></Errorpage>,
+			children: [
+				// {
+				// 	path: "/",
+				// 	element: <Home></Home>,
+				// },
+				{
+					path: "/home",
+
+					element: <Home></Home>,
+					loader: () => {
+						return fetch(
+							"https://openapi.programming-hero.com/api/quiz"
+						);
+					},
+				},
+
+				{
+					path: "/chart",
+					element: <Chart></Chart>,
+				},
+				{
+					path: "/blog",
+					element: <Blog></Blog>,
+				},
+			],
 		},
-	
   ]);
 
 
@@ -53,6 +58,8 @@ function App() {
 }
 
 export default App;
+
+
 
 
 
