@@ -1,0 +1,73 @@
+.container{
+    width: auto;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+    border: 5px solid wheat;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 2px;
+    margin: 2% auto;
+
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+
+.btn{
+    background-color: azure;
+ border: 1px solid wheat;
+ padding:  30px;
+ border-radius: 5px;
+ color: black;
+ font-weight: bolder;
+ outline: none;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px ;
+
+ 
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media only screen and (max-width: 700px) {
+    .btn-grid {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 10px;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+        .btn-grid {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                gap: 10px;
+                margin: 20px 0;
+            }
+}
