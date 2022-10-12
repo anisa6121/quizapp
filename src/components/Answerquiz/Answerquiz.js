@@ -1,20 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { toast } from 'react-toastify';
 import "./Answerquiz.css";
 
 const Answerquiz = ({ data }) => {
 	// console.log(data)
+	
 
 	const { options, correctAnswer, question } = data;
 
 	const Answer = (Iscorrect) => {
 
 		if (Iscorrect === correctAnswer) {
+
 			toast.success("your answer is correct", {
 				autoClose: 500,
 			});
-		} else {
+
+		}
+		
+		else {
 			toast.error("your answer is wrong", { autoClose: 500 });
+
+			
 		}
 
 }
@@ -22,7 +29,7 @@ const Answerquiz = ({ data }) => {
 
 	return (
 		<div>
-			<div className="container">
+			<div className="containere">
 				<div className="flex justify-evenly flex-wrap">
 					<div>
 						<h1 className="text-2xl">
@@ -37,12 +44,16 @@ const Answerquiz = ({ data }) => {
 						</span>
 					</div>
 				</div>
-
-   <div className="btn-grid">
-  {options.map((option) => (<button className="btn" onClick={()=>Answer(option)} >
-    {option}
-   </button>
-))}
+			
+			<div className="btn-grid">
+					{options.map((option) => (
+						<button
+							className="btn"
+							onClick={() => Answer(option)}
+						>
+							{option}
+						</button>
+					))}
 				</div>
 			</div>
 		</div>

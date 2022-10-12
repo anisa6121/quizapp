@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Answerquiz from '../Answerquiz/Answerquiz';
+
 import "./Quizdetails.css";
 const Quizdetails = () => {
 
@@ -9,7 +10,7 @@ const Quizdetails = () => {
     const getData = loadData.data.questions
     console.log(getData)
 
-
+	
 
 
  return (
@@ -19,7 +20,7 @@ const Quizdetails = () => {
 					Quiz of {loadData.data.name}
 				</h2>
 				<p>Total Question: {loadData.data.total}</p>
-				<h1>Score:</h1>
+				
 			</div>
 
 			{getData.map((data) => (

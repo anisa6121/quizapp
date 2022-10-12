@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Herosection = () => {
 	return (
@@ -21,8 +22,12 @@ const Herosection = () => {
 							will increase your skills and
 							knowledge.
 						</p>
+					
 					</div>
 					<hr className="mb-6 border-gray-300" />
+<Link to='/home'>
+<button className='bg-blue-500 px-10 py-4 text-white  rounded-lg text-2xl'>Get Start</button>
+</Link>
 				</div>
 
 				<div className="px-5 pt-6 pb-5 text-center border border-gray-300 rounded lg:w-3/5">

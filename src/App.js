@@ -6,6 +6,7 @@ import Blog from './components/Blog/Blog'
 import Main from './layout/Main';
 import Errorpage from './components/Errorpage/Errorpage';
 import Quizdetails from './components/Quizdetails/Quizdetails';
+import Herosection from './components/Herosection/Herosection';
 
 
 
@@ -18,10 +19,10 @@ function App() {
 			element: <Main></Main>,
 			errorElement: <Errorpage></Errorpage>,
 			children: [
-				// {
-				// 	path: "/",
-				// 	element: <Home></Home>,
-				// },
+				{
+					path: "/",
+					element: <Herosection></Herosection>,
+				},
 				{
 					path: "/home",
 
