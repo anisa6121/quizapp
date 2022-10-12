@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 import "./Answerquiz.css";
 
 const Answerquiz = ({ data }) => {
@@ -7,7 +8,9 @@ const Answerquiz = ({ data }) => {
 	const { options, correctAnswer, question } = data;
 
 	const Answer = (Iscorrect) => {
-	console.log('helloo', Iscorrect)
+
+		
+
 }
 
 
