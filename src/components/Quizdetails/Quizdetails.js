@@ -5,25 +5,32 @@ import "./Quizdetails.css";
 const Quizdetails = () => {
 
     const loadData = useLoaderData()
-    // console.log(loadData)
-    const Data = loadData.data
-    console.log(Data)
+    console.log(loadData)
+    const getData = loadData.data.questions
+    console.log(getData)
 
-const getData = loadData.data.questions
-    // console.log(getData)
-    return (
-        <div>
-            {
-                getData.map(data =>
-                    <Answerquiz
-                        data={data}
-                        key={data.id}
-                    Data ={Data}
-                    ></Answerquiz>)
-}
-          
-        </div>
-    );
+
+
+
+ return (
+		<div>
+			<div className="text-center text-2xl mt-16 mb-12">
+				<h2 className=" text-sky-400 text-3xl font-bold">
+					Quiz of {loadData.data.name}
+				</h2>
+				<p>Total Question: {loadData.data.total}</p>
+				<h1>Score:</h1>
+			</div>
+
+			{getData.map((data) => (
+				<Answerquiz
+					data={data}
+					key={data.id}
+					
+				></Answerquiz>
+			))}
+		</div>
+ );
 };
 
 export default Quizdetails;
