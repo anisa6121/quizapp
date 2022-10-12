@@ -45,7 +45,7 @@ const [open, setopen] = useState(false)
 						{open ? <EyeIcon /> : <EyeIcon></EyeIcon>}
 					</div>
 <ul
-className={`bg-purple-200 md:flex justify-end  absolute duration-500 ease-in  w-auto p-3  rounded-lg ${open? "right-10": "top-[-120px]"
+className={`bg-purple-200 md:flex sm:flex-wrap justify-end  absolute duration-500 ease-in  w-auto h-auto p-3  rounded-lg ${open? "right-40": "top-[-120px]"
 	}`}>{correctAnswer}
 	</ul>
 				</div>

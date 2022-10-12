@@ -28,7 +28,7 @@
  outline: none;
 }
 
-.tooltip {
+/* .tooltip {
     position: relative;
     display: inline-block;
  border-bottom: 1px solid skyblue;
@@ -52,7 +52,7 @@
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
-} 
+}  */
 
 @media only screen and (max-width: 700px) {
     .btn-grid {
