@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import { EyeIcon } from "@heroicons/react/24/solid";
 import "./Answerquiz.css";
@@ -26,7 +26,7 @@ const Answerquiz = ({ data }) => {
 		}
 
 }
-
+const [open, setopen] = useState(false)
 
 	return (
 		<div>
@@ -38,14 +38,16 @@ const Answerquiz = ({ data }) => {
 						</h1>
 					</div>
 
-					<div className="tooltip  font-bold text-blue-500">
-						Ans
-						<span className="tooltiptext">
-							{correctAnswer}
-						</span>
+					<div
+						onClick={() => setopen(!open)}
+						className="h-6 w-6  text-blue-500"
+					>
+						{open ? <EyeIcon /> : <EyeIcon></EyeIcon>}
 					</div>
-
-	
+<ul
+className={`bg-purple-200 md:flex justify-end  absolute duration-500 ease-in  w-auto p-3  rounded-lg ${open? "right-10": "top-[-120px]"
+	}`}>{correctAnswer}
+	</ul>
 				</div>
 
 				<div className="btn-grid">
