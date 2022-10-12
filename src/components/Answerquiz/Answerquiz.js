@@ -45,12 +45,7 @@ const Answerquiz = ({ data }) => {
 						</span>
 					</div>
 
-					{/* <div className="tooltip  font-bold text-blue-500">
-						Ans
-						<span className="tooltiptext">
-							{correctAnswer}
-						</span>
-					</div> */}
+	
 				</div>
 
 				<div className="btn-grid">
