@@ -9,7 +9,13 @@ const Answerquiz = ({ data }) => {
 
 	const Answer = (Iscorrect) => {
 
-		
+		if (Iscorrect === correctAnswer) {
+			toast.success("your answer is correct", {
+				autoClose: 500,
+			});
+		} else {
+			toast.error("your answer is wrong", { autoClose: 500 });
+		}
 
 }
 
