@@ -12,12 +12,12 @@ const Herosection = () => {
 							<br className="hidden md:block" />
 							Learn on your
 							<br />
-							<span className="inline-block text-deep-purple-accent-400">
-								Suitable Schedule
+							<span className="inline-block text-deep-purple-accent-400  text-yellow-400">
+								Free Time
 							</span>
 						</h2>
 						<p className="text-base text-gray-700 md:text-lg ">
-							Find your favorite subject
+							Find your favorite lesson
 							select <br /> and practice. It
 							will increase your skills and
 							knowledge.

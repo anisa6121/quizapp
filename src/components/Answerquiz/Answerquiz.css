@@ -31,7 +31,7 @@
 .tooltip {
     position: relative;
     display: inline-block;
- border-bottom: 3px solid skyblue;
+ border-bottom: 1px solid skyblue;
 }
 
 .tooltip .tooltiptext {

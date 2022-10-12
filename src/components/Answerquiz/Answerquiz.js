@@ -1,5 +1,6 @@
 import React from 'react';
 import { toast } from 'react-toastify';
+import { EyeIcon } from "@heroicons/react/24/solid";
 import "./Answerquiz.css";
 
 const Answerquiz = ({ data }) => {
@@ -38,14 +39,21 @@ const Answerquiz = ({ data }) => {
 					</div>
 
 					<div className="tooltip  font-bold text-blue-500">
-						Ans:
+						Ans
 						<span className="tooltiptext">
 							{correctAnswer}
 						</span>
 					</div>
+
+					{/* <div className="tooltip  font-bold text-blue-500">
+						Ans
+						<span className="tooltiptext">
+							{correctAnswer}
+						</span>
+					</div> */}
 				</div>
-			
-			<div className="btn-grid">
+
+				<div className="btn-grid">
 					{options.map((option) => (
 						<button
 							className="btn"

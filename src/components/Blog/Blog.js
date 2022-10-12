@@ -5,7 +5,7 @@ const Blog = () => {
 		<div className="dark:bg-gray-800 dark:text-gray-100">
 			<div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
 				<div className="mt-3">
-					<h1 className="text-3xl">
+					<h1 className="text-3xl text-green-500">
 						Purpose Of React Router
 					</h1>
 					<p className="mt-2 text-2xl ">
@@ -34,7 +34,7 @@ const Blog = () => {
 
 			<div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
 				<div className="mt-3">
-					<h1 className="text-3xl">
+					<h1 className="text-3xl text-green-500">
 						How does Context Api Works?
 					</h1>
 					<p className="mt-2 text-2xl">
@@ -63,7 +63,7 @@ const Blog = () => {
 
 			<div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
 				<div className="mt-3">
-					<h1 className="text-3xl">useRef Hook</h1>
+					<h1 className="text-3xl text-green-500">useRef Hook</h1>
 					<p className="mt-2 text-2xl">
 						There is a prerequisite to know about
 						the ref in react. The useRef is a hook
